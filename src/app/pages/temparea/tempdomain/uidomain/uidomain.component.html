@@ -26,6 +26,9 @@
         <amexio-number-input [field-label]="'Phone Number '" [(ngModel)]="uidomainModel.phonenumber" name="uidomainModel.phonenumber" [place-holder]="'Enter Phone Number '" [allow-blank]="true" [error-msg]="'Please Enter Phone Number '" [font-size]="10" [has-label]="true"
             [min-value]="0" [max-value]="20" (onBlur)="onBlur_phonenumber($event)" (input)="input_phonenumber($event)" (focus)="focus_phonenumber($event)">
         </amexio-number-input>
+        <amexio-email-input [field-label]="'Email'" [(ngModel)]="uidomainModel.email" name="uidomainModel.email" [place-holder]="'Enter'" [allow-blank]="true" [error-msg]="'Please Enter Email'" [font-size]="10" [has-label]="true" (onBlur)="onBlur_email($event)"
+            (input)="input_email($event)" (focus)="focus_email($event)">
+        </amexio-email-input>
     </amexio-column>
 </amexio-row>
 

@@ -24,6 +24,9 @@ export class UidomainComponent implements OnInit{
         onBlur_phonenumber(eventData:any){} 
       input_phonenumber(eventData:any){} 
       focus_phonenumber(eventData:any){} 
+        onBlur_email(eventData:any){} 
+      input_email(eventData:any){} 
+      focus_email(eventData:any){} 
         onBlur_address(eventData:any){} 
       input_address(eventData:any){} 
       focus_address(eventData:any){} 
@@ -35,4 +38,4 @@ export class UidomainComponent implements OnInit{
    
 }
 export class UidomainModel{
-  firstname: string;  lastname: string;  phonenumber: number;  address: string; }
+  firstname: string;  lastname: string;  phonenumber: number;  email: string;  address: string; }
