@@ -15,9 +15,19 @@ export class UidomainComponent implements OnInit{
   constructor(private http: HttpClient) {
     this.uidomainModel=new UidomainModel();
        }
-        onBlur_textarea(eventData:any){} 
-      input_textarea(eventData:any){} 
-      focus_textarea(eventData:any){} 
+          onBlur_firstname(eventData:any){} 
+      input_firstname(eventData:any){} 
+      focus_firstname(eventData:any){} 
+        onBlur_lastname(eventData:any){} 
+      input_lastname(eventData:any){} 
+      focus_lastname(eventData:any){} 
+        onBlur_phonenumber(eventData:any){} 
+      input_phonenumber(eventData:any){} 
+      focus_phonenumber(eventData:any){} 
+        onBlur_address(eventData:any){} 
+      input_address(eventData:any){} 
+      focus_address(eventData:any){} 
+        onClick_save(eventData:any){} 
     ngOnInit(){
   }
  
@@ -25,4 +35,4 @@ export class UidomainComponent implements OnInit{
    
 }
 export class UidomainModel{
-  textarea: string; }
+  firstname: string;  lastname: string;  phonenumber: number;  address: string; }
